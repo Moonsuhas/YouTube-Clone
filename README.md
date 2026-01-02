@@ -11,16 +11,37 @@ Role: Full Stack Developer
 
 This project is a full stack web application that demonstrates real-world application development using modern web technologies. The frontend is developed using React to provide a smooth and responsive user interface, while the backend is built with Node.js and Express.js to handle APIs, authentication, and database operations. MongoDB is used as the database to store users, videos, and comments.
 
-## Features
+## 🚀 Features
 
-- User registration and login
-- JWT-based authentication
-- Video upload and streaming
-- Like and dislike videos
-- Comment on videos
-- View user channel and uploaded videos
-- Protected routes for authorized users
+### Home Page
+- Grid display of all videos  
+- Category filtering and search bar  
+- Responsive layout for mobile, tablet, desktop  
 
+### Video Watch Page
+- Play selected video  
+- View video title, uploader, and views  
+- Multiple language support for audio (English, Hindi)  
+
+### Sidebar
+- YouTube-style sidebar with 20+ sections:
+  - Home, Shorts, Subscriptions, Library, History, Your Videos, Downloads, Music, News, Sports, Gaming, Trending, etc.  
+- Scrollable sidebar  
+- Active section highlighted  
+
+### User Authentication
+- Login / Register  
+- Profile picture display when logged in  
+- Logout redirects to Home page and profile disappears  
+- Protected routes (Upload, Channel)  
+
+### Mic / Voice Search
+- Start voice search by clicking the mic icon  
+- Search videos using speech recognition (Chrome supported)  
+
+### Upload & Channel
+- Upload videos via a protected page  
+- Manage channel information  
 ## Technologies Used
 
 Frontend:
