@@ -29,10 +29,26 @@ const recognition = SpeechRecognition
   : null;
 
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   const u = localStorage.getItem("user");
+  //   if (u) setUser(JSON.parse(u));
+  // }, []);
+
+useEffect(() => {
+  const syncUser = () => {
     const u = localStorage.getItem("user");
-    if (u) setUser(JSON.parse(u));
-  }, []);
+    setUser(u ? JSON.parse(u) : null);
+  };
+
+  syncUser();
+  window.addEventListener("storage", syncUser);
+
+  return () => window.removeEventListener("storage", syncUser);
+}, []);
+
+
+
+
 
   const handleSearch = (e) => {
     if (e.key === "Enter") {
