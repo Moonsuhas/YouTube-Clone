@@ -40,7 +40,7 @@ Backend:
 Tools:
 - Git
 - GitHub
-- Postman
+- Thunder client
 - VS Code
 
 ## Project Folder Structure
@@ -81,7 +81,7 @@ youtube-clone/
 ## Installation and Setup
 
 Clone the repository:
-git clone https://github.com/your-username/youtube-clone.git
+git clone [https://github.com/your-username/youtube-clone.git] (https://github.com/Moonsuhas/YouTube-Clone)
 
 Backend setup:
 cd backend  
