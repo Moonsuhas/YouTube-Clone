@@ -1,10 +1,10 @@
 /**
  * Toast Component
- * ------------------------------------------------------------
- * A lightweight notification component that displays temporary
- * messages such as success, error, warning, or info.
- *
- * Automatically hides after a given duration and supports manual close.
+  ------------------------------------------------------------
+  A lightweight notification component that displays temporary
+  messages such as success, error, warning, or info.
+ 
+  Automatically hides after a given duration and supports manual close.
  */
 
 import React, { useState, useEffect } from "react";
