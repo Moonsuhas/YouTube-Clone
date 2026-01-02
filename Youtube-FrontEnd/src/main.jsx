@@ -31,8 +31,8 @@ import ComingSoon from "./pages/ComingSoon";
 
 /**
  * Route Configuration
- * ------------------------------------------------------------
- * App is the root layout
+ * --------------------------------------------
+ * App is the root layout 
  * Public routes: Home, Register, Login, Watch
  * Protected routes: Upload, Channel
  * Additional YouTube-like routes use ComingSoon
