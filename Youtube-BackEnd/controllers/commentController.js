@@ -1,9 +1,9 @@
 import Video from "../models/Video.model.js";
 
 /**
- * =======================================================
+ * ============================================
  * ADD COMMENT TO A VIDEO
- * =======================================================
+ * ============================================
  * Adds a new comment to a specific video.
  * Only logged-in users can comment.
  */
