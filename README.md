@@ -117,7 +117,6 @@ POST /api/comments
 GET /api/comments/:videoId  
 
 ## Future Enhancements
-
 - Subscribe and unsubscribe feature
 - Video search functionality
 - Playlists
@@ -134,5 +133,4 @@ GET /api/comments/:videoId
 - GitHub project management
 
 ## License
-
 This project is created for educational and learning purposes only.
