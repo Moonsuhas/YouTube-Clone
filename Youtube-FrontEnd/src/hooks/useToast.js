@@ -15,6 +15,7 @@ export default function useToast() {
   // Stores list of active toast notifications
   const [toasts, setToasts] = useState([]);
 
+  
   /**
    * showToast()
    * -----------
