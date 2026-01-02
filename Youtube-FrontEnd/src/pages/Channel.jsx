@@ -26,7 +26,18 @@ import Loading from "../components/Loading";
 import Toast from "../components/Toast";
 
 export default function Channel() {
-  const navigate = useNavigate();
+ // const navigate = useNavigate();
+const navigate = useNavigate();
+
+const handleLogout = () => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("user");
+
+  alert("You have logged out");
+
+  navigate("/", { replace: true });
+};
+
 
   // Auth values
   const token = localStorage.getItem("token");

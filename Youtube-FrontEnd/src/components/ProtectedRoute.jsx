@@ -25,7 +25,8 @@ export default function ProtectedRoute({ children }) {
 
   // If token is missing → redirect user to login page
   if (!token) {
-    return <Navigate to="/signin" replace />;
+    // return <Navigate to="/signin" replace />;
+    return <Navigate to="/login" replace />;
   }
 
   // If authenticated → allow access to protected component

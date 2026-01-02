@@ -6,6 +6,8 @@
  * - Login / User profile
  */
 
+
+
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 import { AiOutlineSearch, AiOutlineAudio } from "react-icons/ai";
@@ -37,6 +39,7 @@ const recognition = SpeechRecognition
       navigate(`/?search=${search}`);
     }
   };
+
 
   // ===== START VOICE SEARCH =====
 const startVoiceSearch = () => {
@@ -148,13 +151,14 @@ const startVoiceSearch = () => {
                 <MdNotificationsNone size={26} />
               </button>
 
-              <Link to="/channel">
+             <Link to="/channel">
                 <img
                   src={user.avatar || "https://i.pravatar.cc/100"}
                   className="w-8 h-8 rounded-full"
                   alt="profile"
                 />
-              </Link>
+              </Link>  
+
             </>
           )}
         </div>
