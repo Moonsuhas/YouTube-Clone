@@ -1,10 +1,20 @@
+// Import required modules
 import express from "express";
 import User from "../models/User.model.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 
+// Create a router instance
 const router = express.Router();
 
+
+/**
+ * ===========================
+ * Register Route
+ * ===========================
+ * URL: POST /register
+ * Description: Handles new user registration.
+ */
 router.post("/register", async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -28,6 +38,15 @@ router.post("/register", async (req, res) => {
   }
 });
 
+
+
+/**
+ * ===========================
+ * Login Route
+ * ===========================
+ * URL: POST /login
+ * Description: Handles user login.
+ */
 router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
