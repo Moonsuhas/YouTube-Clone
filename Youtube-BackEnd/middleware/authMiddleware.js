@@ -1,5 +1,5 @@
 /**
- * ============================================================
+ * ========================================================
  * AUTH MIDDLEWARE
  * Validates JWT token passed in the "Authorization" header.
  *
@@ -9,7 +9,7 @@
  *  3. Extract token and verify using JWT_SECRET.
  *  4. Attach decoded user payload to req.user.
  *  5. Call next() to continue request handling.
- * ============================================================
+ * ========================================================
  */
 
 import jwt from "jsonwebtoken";
