@@ -1,7 +1,7 @@
 /**
- * ============================================================
+ * =========================================================
  * Cloudinary Configuration
- * ============================================================
+ * =========================================================
  * This file initializes the Cloudinary SDK using credentials
  * from environment variables and exports the configured instance.
  * Used for uploading avatars, banners, and other images.
