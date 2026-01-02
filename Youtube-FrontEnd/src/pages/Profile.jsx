@@ -29,9 +29,9 @@ export default function Profile() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  /* ------------------------------------------------------------
+  /* ----------------------------------------------------
    * Fetch logged-in user's profile
-   * ------------------------------------------------------------ */
+   * ----------------------------------------------------- */
   useEffect(() => {
     const fetchUser = async () => {
       try {
@@ -47,12 +47,12 @@ export default function Profile() {
     fetchUser();
   }, []);
 
-  /* ------------------------------------------------------------
+  /* -------------------------------------------------------
    * Logout User
    * - Clears token + user from localStorage
    * - Dispatches an event so Navbar updates immediately
    * - Redirects to homepage
-   * ------------------------------------------------------------ */
+   * --------------------------------------------------------*/
   const handleLogout = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
@@ -69,9 +69,9 @@ export default function Profile() {
 
   return (
     <div className="min-h-screen bg-[#0f0f0f] text-white">
-      {/* ==========================================================
+      {/* ========================================================
            CHANNEL BANNER
-         ========================================================== */}
+         ========================================================= */}
       <div className="w-full h-40 sm:h-52 md:h-64 bg-gray-700 relative">
         <img
           src={
