@@ -3,9 +3,9 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 /**
- * ---------------------------------------------------
+ * -------------------------------------------
  * Helper Function: Create JWT Token
- * ---------------------------------------------------
+ * -------------------------------------------
  * @param {ObjectId} userId - MongoDB user _id
  * @returns {String} signed JWT token
  */
@@ -16,9 +16,9 @@ const createAuthToken = (userId) => {
 };
 
 /**
- * =======================================================
+ * ===============================================
  * REGISTER USER
- * =======================================================
+ * ===============================================
  * Registers a new user after validating input and
  * hashing the password securely.
  */
