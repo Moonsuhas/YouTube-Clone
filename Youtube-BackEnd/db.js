@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
 /**
- * ============================================================
+ * ======================================================
  * MongoDB Connection Utility
  * Establishes a connection to MongoDB using Mongoose.
  * This function is imported and executed in server.js
- * ============================================================
+ * ======================================================
  */
 
 const connectDB = async () => {
