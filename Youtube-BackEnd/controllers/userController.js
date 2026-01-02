@@ -3,9 +3,9 @@ import cloudinary from "../config/cloudinary.js";
 import fs from "fs";
 
 /**
- * =======================================================
+ * ===================================================
  * GET LOGGED-IN USER
- * =======================================================
+ * ===================================================
  * Returns authenticated user's profile
  */
 export const getMe = async (req, res) => {
