@@ -2,7 +2,7 @@
  * Custom Toast Hook
  * ------------------
  * Manages toast notifications globally across the app.
- *
+ 
  * Features:
  * - Add toast messages (success, error, warning, info)
  * - Auto-remove toast after given duration
