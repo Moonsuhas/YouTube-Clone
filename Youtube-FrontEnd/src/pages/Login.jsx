@@ -1,7 +1,7 @@
 /**
- * ===============================================================
+ * =====================================================
  * Login Page Component
- * ---------------------------------------------------------------
+ * -----------------------------------------------------
  * This component handles:
  *  - User authentication using email + password
  *  - Sending credentials to backend via POST /auth/login
@@ -11,7 +11,7 @@
  * UI:
  *  - Clean, YouTube-inspired login card
  *  - Form validation + error handling
- * ===============================================================
+ * ===========================================
  */
 
 import React, { useState } from "react";
@@ -28,9 +28,9 @@ export default function Login() {
   // Error state for authentication issues
   const [error, setError] = useState("");
 
-  /* ------------------------------------------------------------
+  /* -------------------------------------------------
    * Handle input changes for controlled form fields
-   * ------------------------------------------------------------ */
+   * ------------------------------------------------- */
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -38,13 +38,13 @@ export default function Login() {
     });
   };
 
-  /* ------------------------------------------------------------
+  /* ---------------------------------------------------
    * Submit Login Form
    * Sends credentials to backend and retrieves:
    *   - JWT token
    *   - User object
    * Saves both in localStorage and redirects to homepage.
-   * ------------------------------------------------------------ */
+   * ---------------------------------------------------- */
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
